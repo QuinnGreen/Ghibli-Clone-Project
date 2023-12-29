@@ -4,6 +4,8 @@ body {
     color: #716844;
     -webkit-text-size-adjust: 100%;
     letter-spacing: 1px; 
+    max-width: 100%;
+    overflow-x: hidden;
 }
 html, body {
     margin: 0;
@@ -65,7 +67,7 @@ div {
     top: 0;
     left: 0;
     background-image: url(18165-clean-compressed-alternate-key-art-widescreen.jpg);
-    height: 100vh;
+    height: 85vh;
     
     /* flex-direction: column; */
     flex-grow: 1;
@@ -85,11 +87,19 @@ div {
     top: 20px;
     left: 0;
     background-color: black;
+    padding-right: 30px;
+    padding-left: 50px;
+    padding-bottom: 0;
+    padding-top: 0;
+    color: #ede6cb;
+    
     
 }
 
 .h4 {
     font-size: 14px;
+    
+    
 }
 * {
   box-sizing: border-box;
@@ -138,7 +148,7 @@ a {
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 0;
+    padding: 40px 30px;
 }
 
 .org-panel {
@@ -159,10 +169,13 @@ a {
     text-align: center;
 }
 .logo {max-width: 100%;}
+
 .cinema-button {
     background-color: #2b2510;
-    margin-top: 20px;
+    margin: 20px;
     padding: 14px 20px;
+    display: inline-block;
+    
 }
 .bg-white {
     background-color: white;
@@ -174,11 +187,17 @@ a {
     justify-content: center;
     align-items: center;
     margin: 10px;
+    margin-top: 50px;
+    
 }
 .poster-holder {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    /* min-width: 1200px; */
+    width: 80%;
+    padding-left: 40px;
+    
        
 }
 .poster-holder > div {
@@ -188,6 +207,8 @@ a {
     /* max-width: 100%;
     max-height: 100%; */
     margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .poster {
@@ -196,8 +217,41 @@ a {
 }
 .form-input {
     font-family: 'Lora', serif;
+    padding: 18px 20px;
+    border: 0;
+}
+
+.subscribe-button {
+    color: #ada277;
+    background-color: #2b2510;
+    font-size: 18px;
+    padding: 16px 20px;
+    border: 0;
 }
 
 .footer-panel {
     background-color: black;
+    height: 100px;
+    position: relative;
+}
+.mad-logo {
+    height: 28px;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+.g-logo {
+    height: 60px;
+    position: absolute;
+    right: 10px;
+    bottom: 25px;
+}
+.gold-logo {
+    transition: ease all .5s;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="gold-logo"] {
+      width: 200px;
+      height: 90px;}
 }
